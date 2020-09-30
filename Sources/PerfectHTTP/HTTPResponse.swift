@@ -311,7 +311,7 @@ public protocol HTTPResponse: class {
 	func next()
 }
 
-public extension HTTPResponse {
+public extension HTTPResponse { 
 	/// Append data to the bodyBytes member.
 	@discardableResult
 	func appendBody(bytes: [UInt8]) -> Self {
