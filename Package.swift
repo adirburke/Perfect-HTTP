@@ -20,8 +20,10 @@
 
 import PackageDescription
 
+let package : Package
+
 #if os(Linux)
-let package = Package(
+package = Package(
 	name: "PerfectHTTP",
 	products: [
 		.library(name: "PerfectHTTP", targets: ["PerfectHTTP"])
@@ -39,7 +41,7 @@ let package = Package(
   ]
 )
 #else
-let package = Package(
+package = Package(
 	name: "PerfectHTTP",
 	platforms: [
 		.macOS(.v10_15)
